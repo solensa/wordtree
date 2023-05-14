@@ -34,7 +34,7 @@ body * {
   font-smoothing: antialiased;
 }
 
-button, select, html, textarea, input {
+button, html, input {
   font-family: "Source Sans Pro", sans-serif !important;
 }
 
@@ -42,6 +42,12 @@ html, body, #container {
   height: 100%;
   background-color: #EDEDED;
   margin:0;
+}
+
+h1 {
+  color: #EA33A6;
+  font-family: 'Boogaloo', cursive;
+  /* font-size: 28px; */
 }
 
 /* - - - - - - - HEADER - - - - - - - - - */
@@ -110,9 +116,9 @@ color:#44AF69;
 }
 
 fieldset {
-  padding: 0 20px 25px 20px;
+  padding: 0 20px 0 20px;
   width: 956px;
-  margin: 0px auto 30px;
+  margin: 40px auto 30px;
   background-color: #ffffff;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -125,6 +131,7 @@ fieldset:hover {
   width: 960px;
   background-color: inherit;
   border: none;
+  margin-top: 0;
 }
 body > #container {
   height: auto;
@@ -159,36 +166,15 @@ body > #container {
 }
 .centreBtn {
   width: calc(100% - 40px);
-  float: left;
   clear: both;
   padding: 20px 0 30px;
   transition: border 0.5s ease-in-out;
 }
-legend a {
-  border-bottom: none;
-}
-.contentWrap legend {
-  width: 100%;
-  display: block;
-  text-align: center;
-  position: relative;
-  padding-bottom: 5px;
-}
 .idNumber {
-  position: absolute;
-  right: 11px;
-  opacity: 0.7;
+  color: #cf9875;
+  font-size: 12px;
+  display:none;
 }
-.textBox {
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-textarea {
-  outline: none !important;
-}
-
 .btnWrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

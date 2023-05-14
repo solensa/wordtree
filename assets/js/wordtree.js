@@ -36,8 +36,9 @@ var orgTree = [
   ["3-2", "Helping / Auxiliary Verbs", "", "", "Helping verbs are used before action or linking verbs to convey additional information regarding aspects of possibility (can, could, etc.) or time (was, did, has, etc.). The main verb with its accompanying helping verb is called a verb phrase.:<br><em>The trip might be dangerous.</em>Might is a helping verb, be is the main verb."],
   ["3-0-0", "Transitive Verbs", "", "", "A transitive verb always has a noun that receives the action of the verb, called the direct object:<br><em>Laurissa raises her hand.</em>The verb is raises. Her hand is the object receiving the verb’s action. Therefore, raises is a transitive verb."],
   ["3-0-1", "Intransitive Verbs", "", "", "An intransitive verb never has a direct or indirect object. Although an intransitive verb may be followed by an adverb or adverbial phrase, there is no object to receive its action.:<br><em>: Laurissa rises slowly from her seat.</em>The verb is rises. The phrase, slowly from her seat, modifies the verb, but no object receives the action."],
-
 ];
+
+// [3] was the URL 
 
 window.onload = function () {
   numberOfFieldsVar();
@@ -111,15 +112,11 @@ function createContent() {
     fieldString =
       '<fieldset id="' +
       fieldTemp +
-      '" style="visibility: hidden; display:none"><div class="contentWrap"><legend><h1><a href="' +
-      orgTree[i][3] +
-      '">' +
+      '" style="visibility: hidden; display:none"><div class="contentWrap"><legend><h1>' +
       orgTree[i][1] +
-      '</a></h1></legend><p class="textBox"><em>' +
+      '</h1></legend><p class=""><em>' +
       orgTree[i][2] +
-      '</em><h4 class="idNumber">' +
-      orgTree[i][0] +
-      "</h4>" +
+      '</em>' +
       orgTree[i][4] +
       '</p></div><div class="centreBtn"><div class="btnWrap">';
 
@@ -156,7 +153,9 @@ function createContent() {
         htmlString += btnString;
       }
     }
-    htmlString += "</div></div></fieldset>";
+    htmlString += '</div></div><div class="idNumber">' +
+    orgTree[i][0] +
+    "</div></fieldset>";
   }
   //alert(htmlString);
   div.innerHTML = htmlString;
