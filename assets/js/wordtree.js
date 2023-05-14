@@ -145,7 +145,7 @@ function createContent() {
         }
 
         btnString =
-          '<span class="unselectedBtn"><input type="button" id="' +
+          '<span class="btnSpan"><input type="button" id="' +
           buttonLengthStoreTemp[j] +
           '" class="unselectedBtn" value="' +
           btnName +
