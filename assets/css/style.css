@@ -49,6 +49,13 @@ h1 {
   font-family: 'Boogaloo', cursive;
   /* font-size: 28px; */
 }
+h5 {
+  color: #EA33A6;
+  font-family: 'Boogaloo', cursive;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline;
+}
 
 /* - - - - - - - HEADER - - - - - - - - - */
 #global-header {
@@ -131,17 +138,12 @@ fieldset:hover {
   width: 960px;
   background-color: inherit;
   border: none;
-  margin-top: 0;
+  margin-top: 20px;
 }
 body > #container {
   height: auto;
   min-height: 100%;
 }
-.subContent img {
-  margin: 0 0 0 10px;
-  width: calc(50% - 10px);
-}
-
 .subContent {
   display: flex;
   flex-direction: row;
@@ -151,24 +153,30 @@ body > #container {
     justify-content: flex-start;
     align-items: center;
 }
-
-.contentWrap .subContent .summary-text {
+.summary-text {
   font-size: 24px;
   color: #2d2d2d;
   line-height: 35px;
-  text-align: left;
-  padding: 0px;
-  width: calc(50% - 10px);
-  margin: 22px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentWrap {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-gap: 20px;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+}
+.main-image {
+  width:100%;
+  margin: 0 0 50px 0;
 }
 .t12 {
   margin-top:12px;
 }
 .centreBtn {
-  width: calc(100% - 40px);
-  clear: both;
   padding: 20px 0 30px;
-  transition: border 0.5s ease-in-out;
 }
 .idNumber {
   color: #cf9875;
