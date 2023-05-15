@@ -258,7 +258,7 @@ body > #container {
     width: 100%;
   }
   #content {
-    padding: 0 20px 30px 20px;
+    padding: 0 20px 70px 20px;
   }
   #global-header {
     padding: 16px 20px;
@@ -287,17 +287,31 @@ body > #container {
   }
   .summary-text {
     font-size: 18px;
-    line-height: 27px;
+    line-height: inherit;
     margin-bottom: 20px;
     order: 2;
 }
-.main-image {
-  width: 70%;
-  margin: -5px auto 0 auto;
-}
+  .main-image {
+    width: 70%;
+    margin: -5px auto 0 auto;
+  }
   .btnWrap {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 
+  /* - - - - - - - BUTTON STYLING - - - - - - - - - */
+  .btnSpan {
+    height:45px;
+  }
+  input {
+    font-size: 14px !important;
+    height: 45px;
+  }
+  .unselectedBtn:hover {
+    height:41px;
+  }
+  .selectedBtn {
+    height:41px;
+  }
 }
