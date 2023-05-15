@@ -260,6 +260,20 @@ body > #container {
   #content {
     padding: 0 20px 30px 20px;
   }
+  #global-header {
+    padding: 16px 20px;
+  }
+  .logo {
+    height: 34px;
+    width: 140px;
+  }
+  .logo-text {
+    font-size: 28px;
+  }
+  .about-link {
+    font-size: 14px;
+    padding-top: 7px;
+}
   /* - - - - - - - INTRO - - - - - - - - - */
   fieldset {
     width: calc(100% - 44px);
@@ -272,14 +286,18 @@ body > #container {
     grid-auto-flow: inherit;
   }
   .summary-text {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
     order: 2;
 }
-  .main-image {
-    width: 70%;
-    margin: 0 auto 10px auto;
-  }
+.main-image {
+  width: 70%;
+  margin: -5px auto 0 auto;
+}
   .btnWrap {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
 
 }
