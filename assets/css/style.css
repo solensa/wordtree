@@ -43,7 +43,9 @@ html, body, #container {
   background-color: #EDEDED;
   margin:0;
 }
-
+p {
+  font-size: 18px;
+}
 h1 {
   color: #EA33A6;
   font-family: 'Boogaloo', cursive;
@@ -52,9 +54,15 @@ h1 {
 h5 {
   color: #EA33A6;
   font-family: 'Boogaloo', cursive;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   display: inline;
+}
+.fs-18{
+  font-size: 18px;
+}
+.mgb-10 {
+  margin-bottom: 10px;
 }
 
 /* - - - - - - - HEADER - - - - - - - - - */
@@ -231,7 +239,7 @@ body > #container {
 }
 
 
-/* footer */
+/* - - - - - - - FOOTER - - - - - - - - - */
 #footer {
   clear: both;
   background-color: #555;
@@ -240,4 +248,38 @@ body > #container {
   height: 50px;
   margin-top: -50px;
   overflow: hidden;
+}
+
+/* - - - - - - - MOBILE - - - - - - - - - */
+/* target max-width: 767px */
+@media (max-width: 767px) {
+
+  #global-header .header-container {
+    width: 100%;
+  }
+  #content {
+    padding: 0 20px 30px 20px;
+  }
+  /* - - - - - - - INTRO - - - - - - - - - */
+  fieldset {
+    width: calc(100% - 44px);
+  }
+  #fieldG {
+    width: calc(100% - 40px);
+  }
+  .contentWrap {
+    grid-template-columns: 1fr;
+    grid-auto-flow: inherit;
+  }
+  .summary-text {
+    order: 2;
+}
+  .main-image {
+    width: 70%;
+    margin: 0 auto 10px auto;
+  }
+  .btnWrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
