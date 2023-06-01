@@ -124,6 +124,11 @@ color:#44AF69;
   font-family: 'Boogaloo', cursive;
   font-size: 28px; */
 }
+.higlightText2 {
+  color: #44AF69;
+  font-family: 'Boogaloo', cursive;
+  font-size: 28px;
+}
 
 #content {
   padding-bottom: 50px;
@@ -289,6 +294,12 @@ body > #container {
     line-height: inherit;
     margin-bottom: 20px;
     order: 2;
+}
+.summary-text-about {
+  order: 0;
+}
+.higlightText2 {
+  font-size: 20px;
 }
   .main-image {
     width: 70%;
