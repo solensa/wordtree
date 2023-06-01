@@ -105,6 +105,11 @@ text-align: right;
 padding-top: 2px;
 color:#44AF69;
 }
+.home-link {
+  
+  text-decoration: none;
+
+}
 .about-link {
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
